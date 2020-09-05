@@ -23,12 +23,12 @@ function setup(){
 
     box1 = new Box(700,520,70,70);
     box2 = new Box(920,520,70,70);
-    pig1 = new Pig(810, 550);
+    pig1 = new Pig(810, 570);
     log1 = new Log(810,460,300, PI/2);
 
     box3 = new Box(700,440,70,70);
     box4 = new Box(920,440,70,70);
-    pig3 = new Pig(810, 420);
+    pig3 = new Pig(810, 425);
 
     log3 =  new Log(810,380,300, PI/2);
 
@@ -74,4 +74,9 @@ function mouseDragged(){
 
 function mouseReleased(){
     slingshot.fly();
+}
+function keyPressed (){
+    if (keyCode == 32){
+        slingshot.attach (bird.body);
+    }
 }

@@ -13,7 +13,9 @@ class SlingShot{
         this.sling2=loadImage ("sprites/sling2.png");
         this.sling3=loadImage ("sprites/sling3.png");
     }
-
+    attach (body) {
+        this.sling.bodyA = body;
+    }
     fly(){
         this.sling.bodyA = null;
     }
