@@ -47,9 +47,11 @@ function setup(){
 }
 
 function draw(){
-    if(backgroundImg)
+    if(backgroundImg){
         background(backgroundImg);
-    
+    }else{
+        background("white");
+    }
         noStroke();
         textSize(35)
         fill("white")
